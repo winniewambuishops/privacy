@@ -1,0 +1,603 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="xmlrpc.php">
+
+	<link rel="shortcut icon" href="" type="image/x-icon">
+	<link rel="icon" href="" type="image/x-icon">
+	<title>Fintech Kenya &#8211; Android App</title>
+	<meta name='robots' content='noindex,follow' />
+	<link rel="alternate" type="application/rss+xml" title="Android &raquo; Feed" href="#" />
+	<link rel="alternate" type="application/rss+xml" title="Android &raquo; Comments Feed" href="#" />
+	<link rel="alternate" type="application/rss+xml" title="Android &raquo; Home Comments Feed" href="#"
+	/>
+	
+	<style id='rs-plugin-settings-inline-css' type='text/css'>
+		.tp-caption a {
+			color: #ff7302;
+			text-shadow: none;
+			-webkit-transition: all 0.2s ease-out;
+			-moz-transition: all 0.2s ease-out;
+			-o-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out
+		}
+
+		.tp-caption a:hover {
+			color: #ffa902;
+			opacity: 1 !important
+		}
+
+		.tp-caption a:focus,
+		.tp-caption a:active {
+			opacity: 1 !important
+		}
+
+		.tp-caption a {
+			color: #ff7302;
+			text-shadow: none;
+			-webkit-transition: all 0.2s ease-out;
+			-moz-transition: all 0.2s ease-out;
+			-o-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out
+		}
+
+		.tp-caption a:hover {
+			color: #ffa902
+		}
+
+		.tp-caption a {
+			color: #ff7302;
+			text-shadow: none;
+			-webkit-transition: all 0.2s ease-out;
+			-moz-transition: all 0.2s ease-out;
+			-o-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out
+		}
+
+		.tp-caption a:hover {
+			color: #ffa902
+		}
+	</style>
+	
+	<style id='appica-inline-css' type='text/css'>
+		body {
+			font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+			font-size: 16px;
+		}
+
+		.text-smaller {
+			font-size: 14px;
+		}
+
+		h1,
+		.h1 {
+			font-size: 48px;
+			font-weight: 300;
+			text-transform: none;
+		}
+
+		h2,
+		.h2 {
+			font-size: 36px;
+			font-weight: 300;
+			text-transform: none;
+		}
+
+		h3,
+		.h3 {
+			font-size: 24px;
+			font-weight: 300;
+			text-transform: none;
+		}
+
+		h4,
+		.h4 {
+			font-size: 18px;
+			font-weight: 400;
+			text-transform: none;
+		}
+
+		h5,
+		.h5 {
+			font-size: 16px;
+			font-weight: 600;
+			text-transform: none;
+		}
+
+		h6,
+		.h6 {
+			font-size: 14px;
+			font-weight: 700;
+			text-transform: none;
+		}
+
+		.badge {
+			font-size: 14px;
+			font-weight: 400;
+			text-transform: none;
+		}
+
+		body,
+		a.downloadable,
+		div.downloadable,
+		.downloadable:hover,
+		.offcanvas-posts .post,
+		.offcanvas-posts .post:hover,
+		.icon-block .text,
+		.appica-versions .icon-block,
+		.gallery-item figcaption p,
+		.pricing-plan.pricing-plan-float,
+		.post-title span,
+		.post-title p,
+		.footer-head,
+		.footer-head:hover,
+		.footer-head:focus,
+		.copyright a {
+			color: #757575;
+		}
+
+		.nav-tabs.alt-tabs li a,
+		.nav-tabs.alt-tabs li.active a,
+		.modal-dialog .btn-default,
+		.modal-dialog .btn-default:hover,
+		.modal-dialog .btn-default:focus {
+			color: #757575 !important;
+		}
+
+		a,
+		a:hover,
+		a:focus,
+		.form-control.active label,
+		.search-field.active button[type=submit],
+		.search-field button[type=submit]:hover,
+		a.downloadable p,
+		div.downloadable p,
+		.nav-tabs>li>a:hover,
+		.nav-tabs>li>a:focus,
+		.nav-tabs>li.active>a,
+		.nav-tabs>li.active>a:hover,
+		.nav-tabs>li.active>a:focus,
+		.nav-filters>li>a:hover,
+		.nav-filters>li>a:focus,
+		.nav-filters>li.active>a,
+		.nav-filters>li.active>a:hover,
+		.nav-filters>li.active>a:focus,
+		.download-item figure i,
+		.download-item footer i,
+		.download-item footer i,
+		.twitter-feed .tweet a:hover,
+		.twitter-feed .tweet-float:before,
+		.pricing-plan .icon,
+		.pricing-plan.pricing-plan-float .icon,
+		.post-meta .comment-count:hover,
+		.post-meta .comment-count:hover i,
+		.copyright a:hover,
+		.copyright a:focus,
+		.offcanvas-nav .search-box .search-btn {
+			color: #008fed;
+		}
+
+		.text-primary,
+		.btn-flat.btn-primary,
+		.btn-flat.btn-primary:hover {
+			color: #008fed !important;
+		}
+
+		.form-control input:focus,
+		.form-control textarea:focus {
+			border-bottom-color: #008fed;
+			-webkit-box-shadow: 0 1px 0 0 #008fed;
+			box-shadow: 0 1px 0 0 #008fed;
+		}
+
+		.btn-primary,
+		.badge.badge-primary .icon,
+		.intro .nav-toggle span,
+		.navbar .container,
+		.offcanvas-nav .nav-head,
+		.nav-tabs>li>a:after,
+		.nav-filters>li>a:after,
+		.app-gallery .item a,
+		.pricing-plan.pricing-plan-primary,
+		.featured-post.bg-primary,
+		.timeline .date:before,
+		.bar-charts .chart.chart-primary .bar,
+		.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+			background-color: #008fed;
+		}
+
+		.grid-btn span:before,
+		.grid-btn span:after {
+			border-color: #008fed;
+		}
+
+		.badge.badge-success .icon,
+		.iradio:before,
+		.btn-success,
+		.featured-post.bg-success,
+		.pricing-plan.pricing-plan-success,
+		.bar-charts .chart.chart-success .bar {
+			background-color: #96cb4b;
+		}
+
+		.text-success,
+		.btn-flat.btn-success,
+		.btn-flat.btn-success:hover {
+			color: #96cb4b !important;
+		}
+
+		.icheckbox.checked,
+		.radio-alt .iradio.checked {
+			border-right-color: #96cb4b;
+			border-bottom-color: #96cb4b;
+		}
+
+		.iradio.checked {
+			border-color: #96cb4b;
+		}
+
+		.feature-tabs .nav-tabs>li>a>i,
+		.icon-block .icon,
+		.gallery-item figcaption h3,
+		.download-item footer:before,
+		.download-item footer h3,
+		.news-block a h3,
+		.post-title a,
+		.post-title h2,
+		.post-title h3,
+		.footer-head:before {
+			color: #96cb4b;
+		}
+
+		.news-block {
+			border-right-color: #96cb4b;
+		}
+
+		.pace .pace-progress {
+			background: #96cb4b;
+		}
+
+		.badge.badge-info .icon,
+		.btn-info,
+		.pricing-plan.pricing-plan-info,
+		.featured-post.bg-info,
+		.bar-charts .chart.chart-info .bar {
+			background-color: #4b62ff;
+		}
+
+		.text-info,
+		.btn-flat.btn-info,
+		.btn-flat.btn-info:hover {
+			color: #4b62ff !important;
+		}
+
+		.badge.badge-warning .icon,
+		.btn-warning,
+		.pricing-plan.pricing-plan-warning,
+		.featured-post.bg-warning,
+		.bar-charts .chart.chart-warning .bar {
+			background-color: #ff6d00;
+		}
+
+		.text-warning,
+		.btn-flat.btn-warning,
+		.btn-flat.btn-warning:hover {
+			color: #ff6d00 !important;
+		}
+
+		.badge.badge-danger .icon,
+		.btn-danger,
+		.pricing-plan.pricing-plan-danger,
+		.featured-post.bg-danger,
+		.bar-charts .chart.chart-danger .bar {
+			background-color: #e91e63;
+		}
+
+		.text-danger,
+		.btn-flat.btn-danger,
+		.btn-flat.btn-danger:hover {
+			color: #e91e63 !important;
+		}
+
+		.text-muted,
+		.twitter-feed .tweet .author {
+			color: #c4c4c4 !important;
+		}
+
+		.unordered-list li:before {
+			background-color: #c4c4c4;
+		}
+
+		.pagination .page-numbers.current,
+		.timeline .date,
+		.contact-info .nav-tabs li.active a,
+		.widget_recent_comments li,
+		.widget_archive li {
+			color: #c4c4c4;
+		}
+
+		dl dt span,
+		figure figcaption,
+		.form-control label,
+		.checkbox,
+		.radio,
+		.checkbox-inline,
+		.radio-inline,
+		.btn-google-play span,
+		div.downloadable p,
+		.twitter-feed .tweet p,
+		.team-member span,
+		.team-grid .item span,
+		.post-meta,
+		.comment .comment-meta span,
+		.footer .rating span,
+		.copyright p,
+		#preloader .logo span,
+		.icons-demo {
+			color: #999999;
+		}
+
+		.text-gray,
+		.twitter-feed .tweet a {
+			color: #999999 !important;
+		}
+
+		.page-heading h1,
+		.page-heading h2,
+		.page-heading h3,
+		.page-heading h4 {
+			color: #757575;
+		}
+
+		.badge {
+			color: #757575;
+		}
+
+		@media screen and (max-width: 991px) {
+			.navbar {
+				padding: 0;
+				height: 80px;
+			}
+			.navbar .container {
+				width: 100%;
+				height: 80px;
+			}
+			.navbar.navbar-fixed-top+* {
+				padding-top: 80px;
+			}
+			.offset-top .navbar+*,
+			.offset-top .sticky-wrapper+*,
+			.navbar+.page-heading,
+			.sticky-wrapper+.page-heading {
+				padding-top: 120px;
+			}
+			.navbar .logo {
+				line-height: 76px;
+			}
+			.navbar .social-buttons {
+				display: none;
+			}
+			.navbar .toolbar {
+				padding-top: 7px;
+			}
+			.navbar .toolbar .action-btn {
+				margin-right: 0;
+			}
+			.navbar+.page>.vc_row {
+				padding-top: 105px !important;
+			}
+			.navbar.navbar-fixed-top+.page>.vc_row,
+			.navbar.navbar-sticky.stuck+.page>.vc_row {
+				padding-top: 50px !important;
+			}
+		}
+
+		.waves-effect.waves-primary .waves-ripple {
+			background: rgba(0, 143, 237, 0.5);
+			background: -webkit-radial-gradient(rgba(0, 143, 237, 0.3) 0, rgba(0, 143, 237, 0.4) 40%, rgba(0, 143, 237, 0.5) 50%, rgba(0, 143, 237, 0.6) 60%, rgba(0, 143, 237, 0) 70%);
+			;
+			background: -o-radial-gradient(rgba(0, 143, 237, 0.3) 0, rgba(0, 143, 237, 0.4) 40%, rgba(0, 143, 237, 0.5) 50%, rgba(0, 143, 237, 0.6) 60%, rgba(0, 143, 237, 0) 70%);
+			;
+			background: -moz-radial-gradient(rgba(0, 143, 237, 0.3) 0, rgba(0, 143, 237, 0.4) 40%, rgba(0, 143, 237, 0.5) 50%, rgba(0, 143, 237, 0.6) 60%, rgba(0, 143, 237, 0) 70%);
+			;
+			background: radial-gradient(rgba(0, 143, 237, 0.3) 0, rgba(0, 143, 237, 0.4) 40%, rgba(0, 143, 237, 0.5) 50%, rgba(0, 143, 237, 0.6) 60%, rgba(0, 143, 237, 0) 70%);
+			;
+		}
+
+		.nav-tabs>li>a.waves-effect.waves-primary .waves-ripple,
+		.nav-filters>li>a.waves-effect.waves-primary .waves-ripple {
+			background: rgba(0, 143, 237, 0.4);
+			background: -webkit-radial-gradient(rgba(0, 143, 237, 0.2) 0, rgba(0, 143, 237, 0.3) 40%, rgba(0, 143, 237, 0.4) 50%, rgba(0, 143, 237, 0.5) 60%, rgba(0, 143, 237, 0) 70%);
+			;
+			background: -o-radial-gradient(rgba(0, 143, 237, 0.2) 0, rgba(0, 143, 237, 0.3) 40%, rgba(0, 143, 237, 0.4) 50%, rgba(0, 143, 237, 0.5) 60%, rgba(0, 143, 237, 0) 70%);
+			;
+			background: -moz-radial-gradient(rgba(0, 143, 237, 0.2) 0, rgba(0, 143, 237, 0.3) 40%, rgba(0, 143, 237, 0.4) 50%, rgba(0, 143, 237, 0.5) 60%, rgba(0, 143, 237, 0) 70%);
+			;
+			background: radial-gradient(rgba(0, 143, 237, 0.2) 0, rgba(0, 143, 237, 0.3) 40%, rgba(0, 143, 237, 0.4) 50%, rgba(0, 143, 237, 0.5) 60%, rgba(0, 143, 237, 0) 70%);
+			;
+		}
+
+		.waves-effect.waves-success .waves-ripple {
+			background: rgba(150, 203, 75, 0.6);
+			background: -webkit-radial-gradient(rgba(150, 203, 75, 0.4) 0, rgba(150, 203, 75, 0.5) 40%, rgba(150, 203, 75, 0.6) 50%, rgba(150, 203, 75, 0.7) 60%, rgba(150, 203, 75, 0) 70%);
+			;
+			background: -o-radial-gradient(rgba(150, 203, 75, 0.4) 0, rgba(150, 203, 75, 0.5) 40%, rgba(150, 203, 75, 0.6) 50%, rgba(150, 203, 75, 0.7) 60%, rgba(150, 203, 75, 0) 70%);
+			;
+			background: -moz-radial-gradient(rgba(150, 203, 75, 0.4) 0, rgba(150, 203, 75, 0.5) 40%, rgba(150, 203, 75, 0.6) 50%, rgba(150, 203, 75, 0.7) 60%, rgba(150, 203, 75, 0) 70%);
+			;
+			background: radial-gradient(rgba(150, 203, 75, 0.4) 0, rgba(150, 203, 75, 0.5) 40%, rgba(150, 203, 75, 0.6) 50%, rgba(150, 203, 75, 0.7) 60%, rgba(150, 203, 75, 0) 70%);
+			;
+		}
+
+		.waves-effect.waves-info .waves-ripple {
+			background: rgba(75, 98, 255, 0.6);
+			background: -webkit-radial-gradient(rgba(75, 98, 255, 0.4) 0, rgba(75, 98, 255, 0.5) 40%, rgba(75, 98, 255, 0.6) 50%, rgba(75, 98, 255, 0.7) 60%, rgba(75, 98, 255, 0) 70%);
+			;
+			background: -o-radial-gradient(rgba(75, 98, 255, 0.4) 0, rgba(75, 98, 255, 0.5) 40%, rgba(75, 98, 255, 0.6) 50%, rgba(75, 98, 255, 0.7) 60%, rgba(75, 98, 255, 0) 70%);
+			;
+			background: -moz-radial-gradient(rgba(75, 98, 255, 0.4) 0, rgba(75, 98, 255, 0.5) 40%, rgba(75, 98, 255, 0.6) 50%, rgba(75, 98, 255, 0.7) 60%, rgba(75, 98, 255, 0) 70%);
+			;
+			background: radial-gradient(rgba(75, 98, 255, 0.4) 0, rgba(75, 98, 255, 0.5) 40%, rgba(75, 98, 255, 0.6) 50%, rgba(75, 98, 255, 0.7) 60%, rgba(75, 98, 255, 0) 70%);
+			;
+		}
+
+		.waves-effect.waves-warning .waves-ripple {
+			background: rgba(255, 109, 0, 0.5);
+			background: -webkit-radial-gradient(rgba(255, 109, 0, 0.3) 0, rgba(255, 109, 0, 0.4) 40%, rgba(255, 109, 0, 0.5) 50%, rgba(255, 109, 0, 0.6) 60%, rgba(255, 109, 0, 0) 70%);
+			;
+			background: -o-radial-gradient(rgba(255, 109, 0, 0.3) 0, rgba(255, 109, 0, 0.4) 40%, rgba(255, 109, 0, 0.5) 50%, rgba(255, 109, 0, 0.6) 60%, rgba(255, 109, 0, 0) 70%);
+			;
+			background: -moz-radial-gradient(rgba(255, 109, 0, 0.3) 0, rgba(255, 109, 0, 0.4) 40%, rgba(255, 109, 0, 0.5) 50%, rgba(255, 109, 0, 0.6) 60%, rgba(255, 109, 0, 0) 70%);
+			;
+			background: radial-gradient(rgba(255, 109, 0, 0.3) 0, rgba(255, 109, 0, 0.4) 40%, rgba(255, 109, 0, 0.5) 50%, rgba(255, 109, 0, 0.6) 60%, rgba(255, 109, 0, 0) 70%);
+			;
+		}
+
+		.waves-effect.waves-danger .waves-ripple {
+			background: rgba(255, 109, 0, 0.5);
+			background: -webkit-radial-gradient(rgba(255, 109, 0, 0.3) 0, rgba(255, 109, 0, 0.4) 40%, rgba(255, 109, 0, 0.5) 50%, rgba(255, 109, 0, 0.6) 60%, rgba(255, 109, 0, 0) 70%);
+			;
+			background: -o-radial-gradient(rgba(255, 109, 0, 0.3) 0, rgba(255, 109, 0, 0.4) 40%, rgba(255, 109, 0, 0.5) 50%, rgba(255, 109, 0, 0.6) 60%, rgba(255, 109, 0, 0) 70%);
+			;
+			background: -moz-radial-gradient(rgba(255, 109, 0, 0.3) 0, rgba(255, 109, 0, 0.4) 40%, rgba(255, 109, 0, 0.5) 50%, rgba(255, 109, 0, 0.6) 60%, rgba(255, 109, 0, 0) 70%);
+			;
+			background: radial-gradient(rgba(255, 109, 0, 0.3) 0, rgba(255, 109, 0, 0.4) 40%, rgba(255, 109, 0, 0.5) 50%, rgba(255, 109, 0, 0.6) 60%, rgba(255, 109, 0, 0) 70%);
+			;
+		}
+	</style>
+	
+	
+	
+	<style type="text/css" data-type="vc_shortcodes-custom-css">
+	
+		.vc_custom_1451389510911 {
+			border-top-width: 1px !important;
+			border-top-color: #f2f2f2 !important;
+			border-top-style: solid !important;
+		}
+
+		.vc_custom_1429615770124 {
+			background-color: #f5f5f5 !important;
+		}
+
+		.vc_custom_1429615794444 {
+			background-color: #008fed !important;
+		}
+
+		.vc_custom_1429615836136 {
+			background-color: #199aef !important;
+		}
+
+		.vc_custom_1429627086900 {
+			margin-bottom: 30px !important;
+		}
+
+		.vc_custom_1429627099192 {
+			margin-bottom: 30px !important;
+		}
+
+		.vc_custom_1429624890740 {
+			margin-bottom: 10px !important;
+		}
+
+		.vc_custom_1429624846093 {
+			margin-bottom: 10px !important;
+		}
+
+		.vc_custom_1429624950688 {
+			margin-bottom: 10px !important;
+		}
+
+		.vc_custom_1429625213648 {
+			margin-bottom: 24px !important;
+		}
+	</style>
+	<noscript>
+		<style type="text/css">
+			.wpb_animate_when_almost_visible {
+				opacity: 1;
+			}
+		</style>
+	</noscript>
+</head>
+
+<body class="home page page-id-842 page-template-default wpb-js-composer js-comp-ver-4.9 vc_responsive">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+
+	
+	</div><!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width'>
+      <title>Privacy Policy</title>
+      <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
+    </head>
+    <body>
+    <h2>Privacy Policy</h2> <p> Shops-Ecommerce Builder built the Shops Ecommerce Website Builder app as a Free app. This SERVICE is provided by
+                    Shops-Ecommerce Builder at no cost and is intended for use as is.
+                  </p> <p>This page is used to inform visitors regarding my policies with the collection, use, and disclosure
+                    of Personal Information if anyone decided to use my Service.
+                  </p> <p>If you choose to use my Service, then you agree to the collection and use of information in
+                    relation to this policy. The Personal Information that I collect is used for providing and improving
+                    the Service. I will not use or share your information with anyone except as described
+                    in this Privacy Policy.
+                  </p> <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is
+                    accessible at Shops-Ecommerce Builder unless otherwise defined in this Privacy Policy.
+                  </p> <p><strong>Information Collection and Use</strong></p> <p>For a better experience, while using our Service, I may require you to provide us with certain
+                    personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
+                  </p> <p>The app does use third party services that may collect information used to identify you.</p> <div><p>Link to privacy policy of third party service providers used by the app</p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li><!----><!----><!----><!----><!----><!----><!----></ul></div> <p><strong>Log Data</strong></p> <p> I want to inform you that whenever you use my Service, in a case of
+                    an error in the app I collect data and information (through third party products) on your phone
+                    called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address,
+                    device name, operating system version, the configuration of the app when utilizing my Service,
+                    the time and date of your use of the Service, and other statistics.
+                  </p> <p><strong>Cookies</strong></p> <p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers.
+                    These are sent to your browser from the websites that you visit and are stored on your device's internal
+                    memory.
+                  </p> <p>This Service does not use these “cookies” explicitly. However, the app may use third party code and
+                    libraries that use “cookies” to collect information and improve their services. You have the option to
+                    either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose
+                    to refuse our cookies, you may not be able to use some portions of this Service.
+                  </p> <p><strong>Service Providers</strong></p> <p> I may employ third-party companies and individuals due to the following reasons:</p> <ul><li>To facilitate our Service;</li> <li>To provide the Service on our behalf;</li> <li>To perform Service-related services; or</li> <li>To assist us in analyzing how our Service is used.</li></ul> <p> I want to inform users of this Service that these third parties have access to
+                    your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However,
+                    they are obligated not to disclose or use the information for any other purpose.
+                  </p> <p><strong>Security</strong></p> <p> I value your trust in providing us your Personal Information, thus we are striving
+                    to use commercially acceptable means of protecting it. But remember that no method of transmission over
+                    the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee
+                    its absolute security.
+                  </p> <p><strong>Links to Other Sites</strong></p> <p>This Service may contain links to other sites. If you click on a third-party link, you will be directed
+                    to that site. Note that these external sites are not operated by me. Therefore, I strongly
+                    advise you to review the Privacy Policy of these websites. I have no control over
+                    and assume no responsibility for the content, privacy policies, or practices of any third-party sites
+                    or services.
+                  </p> <p><strong>Children’s Privacy</strong></p> <p>These Services do not address anyone under the age of 13. I do not knowingly collect
+                    personally identifiable information from children under 13. In the case I discover that a child
+                    under 13 has provided me with personal information, I immediately delete this from
+                    our servers. If you are a parent or guardian and you are aware that your child has provided us with personal
+                    information, please contact me so that I will be able to do necessary actions.
+                  </p> <p><strong>Changes to This Privacy Policy</strong></p> <p> I may update our Privacy Policy from time to time. Thus, you are advised to review
+                    this page periodically for any changes. I will notify you of any changes by posting
+                    the new Privacy Policy on this page. These changes are effective immediately after they are posted on
+                    this page.
+                  </p> <p><strong>Contact Us</strong></p> <p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact
+                    me.
+                  </p> 
+    </body>
+    </html>
+      
